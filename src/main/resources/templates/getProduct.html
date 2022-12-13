@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Product</title>
+</head>
+<body>
+	<table>
+		<tbody th:object="${product}">
+			<tr>
+				<td><b>Product name:</b></td>
+				<td>[[${product.name}]]</td>
+			</tr>
+			<tr>
+				<td><b>Product Price:</b></td>
+				<td>[[${product.price}]]</td>
+			</tr>
+
+		</tbody>
+	</table>
+</body>
+</html>
